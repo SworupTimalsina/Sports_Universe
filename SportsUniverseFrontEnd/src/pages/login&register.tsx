@@ -1,7 +1,7 @@
 import React from 'react';
-import './register.css'
+import './login&register.css'
 
-const Register: React.FC = () => {
+const LoginRegister: React.FC = () => {
     const handleSignUpClick = () => {
         const container = document.getElementById('container');
         if (container) {
@@ -23,14 +23,15 @@ const Register: React.FC = () => {
                     <form action="#">
                         <h1>Create Account</h1>
                         <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
                             <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                         <span>Or use your email for registration</span>
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
+                        <input type="number" placeholder="Phone Number" />
+                        <input type="Address" placeholder="Address" />
+
                         <button>Sign Up</button>
                     </form>
                 </div>
@@ -38,14 +39,13 @@ const Register: React.FC = () => {
                     <form action="#">
                         <h1>Sign in</h1>
                         <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
                             <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                            <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+
                         </div>
                         <span>Or use your account</span>
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
-                        <a href="#">Forgot your password?</a>
+                        <a href="/ForgotPassword" className="forgot-password">Forgot your password?</a>
                         <button>Sign In</button>
                     </form>
                 </div>
@@ -60,6 +60,7 @@ const Register: React.FC = () => {
                             <h1>Hello, Friend!</h1>
                             <p>Enter your personal details and start journey with us</p>
                             <button className="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+
                         </div>
                     </div>
                 </div>
@@ -71,4 +72,4 @@ const Register: React.FC = () => {
     );
 }
 
-export default Register;
+export default LoginRegister;

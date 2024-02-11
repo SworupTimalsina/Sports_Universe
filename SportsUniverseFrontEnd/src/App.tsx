@@ -1,12 +1,17 @@
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Register from "./pages/register.tsx";
+import LoginRegister from "./pages/login&register.tsx";
+import ForgotPassword from "./pages/ForgotPassword.tsx";
 
 const router = createBrowserRouter(
     [
         {
-            path:"/register",
-            element:<Register/>
+            path:"/login&register",
+            element:<LoginRegister/>
+        },
+        {
+            path:"/forgotpassword",
+            element:<ForgotPassword/>
         },
 
 
