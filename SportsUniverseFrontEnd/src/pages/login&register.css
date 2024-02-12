@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    margin: -20px 0 50px;
+
 }
 
 h1 {
@@ -45,7 +45,7 @@ a {
     margin: 15px 0;
 }
 
-button {
+.s-btn {
     border-radius: 20px;
     border: 1px solid #FF4B2B;
     background-color: #FF4B2B;
@@ -58,19 +58,39 @@ button {
     transition: transform 80ms ease-in;
 }
 
-button:active {
+.s2-btn {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.button:active {
     transform: scale(0.95);
 }
 
-button:focus {
+.button:focus {
     outline: none;
 }
-
-button.ghost {
+.ghost {
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
     background-color: skyblue;
-    border-color: #FFFFFF;
     color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
+
 
 form {
     background-color: #FFFFFF;
@@ -81,6 +101,7 @@ form {
     padding: 0 50px;
     height: 100%;
     text-align: center;
+
 }
 
 input {
@@ -214,21 +235,7 @@ input {
     transform: translateX(20%);
 }
 
-.social-container {
-    margin: 20px 0;
-}
 
-.social-container a {
-    border: 1px solid #DDDDDD;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
-    background-image: url('../images/glogo2.png');
-}
 
 footer {
     background-color: #222;
@@ -274,9 +281,6 @@ footer a {
     align-items: center;
 }
 
-.ghost {
-    background-color: blue;
-}
 
 a.forgot-password {
     color: red;

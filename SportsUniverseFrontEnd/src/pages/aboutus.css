@@ -1,0 +1,32 @@
+.aboutus-container {
+    width: 1000px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    height: 600px;
+    margin-bottom: 30px;
+    margin-left: 270px;
+    margin-top: 550px;
+}
+
+.logo-img {
+    display: block;
+    margin-left: 350px;
+}
+
+.ab-txt {
+    text-align: center;
+    font-family: "julius sans one", sans-serif;
+}
+
+.ab-txt h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ab-txt p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+

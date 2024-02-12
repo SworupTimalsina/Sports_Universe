@@ -1,0 +1,29 @@
+.top-buttons{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    z-index: 10;
+}
+
+.logout-button {
+    margin-left: 800px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+}
+
+
+.buttons{
+    margin-left: 40px;
+    gap: 70px;
+    display: flex;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+
+}

@@ -22,31 +22,23 @@ const LoginRegister: React.FC = () => {
                 <div className="form-container sign-up-container">
                     <form action="#">
                         <h1>Create Account</h1>
-                        <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                        </div>
-                        <span>Or use your email for registration</span>
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
                         <input type="number" placeholder="Phone Number" />
                         <input type="Address" placeholder="Address" />
 
-                        <button>Sign Up</button>
+                        <button className="s2-btn">Sign Up</button>
                     </form>
                 </div>
                 <div className="form-container sign-in-container">
                     <form action="#">
                         <h1>Sign in</h1>
-                        <div className="social-container">
-                            <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
 
-                        </div>
-                        <span>Or use your account</span>
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
                         <a href="/ForgotPassword" className="forgot-password">Forgot your password?</a>
-                        <button>Sign In</button>
+                        <button className="s-btn">Sign In</button>
                     </form>
                 </div>
                 <div className="overlay-container">
