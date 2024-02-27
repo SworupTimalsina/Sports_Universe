@@ -5,6 +5,7 @@ import ForgotPassword from "./pages/ForgotPassword.tsx";
 import Dashboard from "./pages/dashboard.tsx";
 import Aboutus from "./pages/aboutus.tsx";
 import Feedback from "./pages/feedback.tsx";
+import Contactus from "./pages/contactus.tsx";
 
 const router = createBrowserRouter(
     [
@@ -28,6 +29,10 @@ const router = createBrowserRouter(
         {
             path:"/feedback",
             element:<Feedback/>
+        },
+        {
+            path:"/contactus",
+            element:<Contactus/>
         },
 
 

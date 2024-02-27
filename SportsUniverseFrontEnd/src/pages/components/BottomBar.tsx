@@ -14,7 +14,7 @@ const BottomBar: React.FC = () => {
                         <div className="abt-but">
                             <Link to="/aboutus"><button className="about">About Us</button></Link>
                             <Link to="/feedback"><button className="feed">Feedback</button></Link>
-                            <button className="contact">Contact Us</button>
+                            <Link to="/contactus"><button className="contact">Contact Us</button></Link>
                         </div>
 
                         <div className="image1">

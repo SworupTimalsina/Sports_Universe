@@ -1,0 +1,46 @@
+.contactus-container {
+    width: 1000px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin: 30px auto;
+    position: relative;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.ab-txt {
+    text-align: center;
+    font-family: "julius sans one", sans-serif;
+}
+
+.ab-txt h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ab-txt p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
