@@ -4,6 +4,7 @@ import LoginRegister from "./pages/login&register.tsx";
 import ForgotPassword from "./pages/ForgotPassword.tsx";
 import Dashboard from "./pages/dashboard.tsx";
 import Aboutus from "./pages/aboutus.tsx";
+import Feedback from "./pages/feedback.tsx";
 
 const router = createBrowserRouter(
     [
@@ -22,6 +23,11 @@ const router = createBrowserRouter(
         {
             path:"/aboutus",
             element:<Aboutus/>
+        },
+
+        {
+            path:"/feedback",
+            element:<Feedback/>
         },
 
 
