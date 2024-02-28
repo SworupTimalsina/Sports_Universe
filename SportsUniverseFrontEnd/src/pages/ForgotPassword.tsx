@@ -26,17 +26,18 @@ const ForgotPassword: React.FC = () => {
     };
 
     return (
+        <div className="login">
         <div className="forgot-password-container">
             <h2>Forgot Password</h2>
             {!emailSubmitted ? (
-                <form onSubmit={handleEmailSubmit}>
+                <form className="forgotpass" onSubmit={handleEmailSubmit}>
                     <div className="form-group">
                         <input type="email" id="email" name="email" placeholder="Enter your email" />
                     </div>
                     <button className="sub" type="submit">Submit</button>
                 </form>
             ) : !otpSubmitted ? (
-                <form onSubmit={handleOtpSubmit}>
+                <form className="forgotpass" onSubmit={handleOtpSubmit}>
                     <div className="form-group">
                         <input type="text" id="otp" name="otp" placeholder="Enter OTP" />
                     </div>
@@ -44,7 +45,7 @@ const ForgotPassword: React.FC = () => {
                 </form>
             ) : !passwordChanged ? (
                 <div>
-                    <form>
+                    <form className="forgotpass">
                         <div className="form-group">
                             <input type="password" id="password" name="password" placeholder="Enter new password" value={password} onChange={(e) => setPassword(e.target.value)} />
                         </div>
@@ -60,6 +61,7 @@ const ForgotPassword: React.FC = () => {
                     <a href="/" className="backtosignin">Back to Sign In Page</a>
                 </div>
             )}
+        </div>
         </div>
     );
 }

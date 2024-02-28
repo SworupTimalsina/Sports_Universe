@@ -9,6 +9,7 @@ const Article: React.FC = () => {
     return (
         <>
             <TopBar />
+            <div className="abtus">
             <div className="aboutus-container">
                 <img className="logo-img" src={logo} alt="Logo" />
                 <div className="ab-txt">
@@ -18,6 +19,7 @@ const Article: React.FC = () => {
                     <img src={product} width="800" height="300" alt="product"/>
 
                 </div>
+            </div>
             </div>
             <BottomBar />
         </>

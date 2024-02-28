@@ -43,16 +43,16 @@
 }
 
 .dashboard-photo {
-    margin-top: 1300px;
+    margin-top: 100px;
     width: 1500px;
     height: 600px;
 
 }
-/* CSS */
+
 .divider {
     border-bottom: 40px solid red; /* Adjust thickness and color as needed */
     width: 100%; /* Ensure it spans the entire width of its container */
-    margin: 20px 0; /* Adjust margin as needed */
+  /* Adjust margin as needed */
 
 }
 
@@ -99,3 +99,8 @@
     font-size: 20px;
     color: #333; /* Adjust the color as needed */
 }
+ .topic{
+     font-size: 30px;
+     font-weight: bold;
+     color: black;
+ }

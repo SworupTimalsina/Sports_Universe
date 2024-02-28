@@ -15,11 +15,11 @@ const Dashboard: React.FC = () => {
             <img src={product} className="dashboard-photo" alt="Product" />
             <div className="divider"></div>
             <div className="category-section">
-                <p>Category</p>
+                <p className="topic">Category</p>
             </div>
             <div className="divider"></div>
             <div className="weoffer-section">
-                <p>What we Offer</p>
+                <p className="topic">What we Offer</p>
                 <div className="offer-boxes-container">
                     <div className="offer-box">
                         <img src={image1} alt="Offer 1" className="offer-image" />
@@ -44,7 +44,7 @@ const Dashboard: React.FC = () => {
                 </div>
                 <div className="divider"></div>
                 <div className="newarrivals-section">
-                    <p>New Arrivals</p>
+                    <p className="topic">New Arrivals</p>
                 </div>
                 <div className="divider"></div>
             </div>

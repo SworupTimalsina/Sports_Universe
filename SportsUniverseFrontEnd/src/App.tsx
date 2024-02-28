@@ -6,6 +6,8 @@ import Dashboard from "./pages/dashboard.tsx";
 import Aboutus from "./pages/aboutus.tsx";
 import Feedback from "./pages/feedback.tsx";
 import Contactus from "./pages/contactus.tsx";
+import Product from "./pages/products.tsx";
+
 
 const router = createBrowserRouter(
     [
@@ -34,15 +36,10 @@ const router = createBrowserRouter(
             path:"/contactus",
             element:<Contactus/>
         },
-
-
-
-
-
-
-
-
-
+        {
+            path:"/products",
+            element:<Product/>
+        },
 
 
     ]

@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background: plum;
+.login {
+    background-color: plum;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,19 @@ a {
 }
 
 
-form {
+.signin {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+
+}
+
+.signup {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;

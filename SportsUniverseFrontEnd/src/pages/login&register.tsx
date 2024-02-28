@@ -17,10 +17,11 @@ const LoginRegister: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="login">
             <div className="container" id="container">
+                <div></div>
                 <div className="form-container sign-up-container">
-                    <form action="#">
+                    <form className="signin" action="#">
                         <h1>Create Account</h1>
                         <input type="text" placeholder="Name" />
                         <input type="email" placeholder="Email" />
@@ -32,7 +33,7 @@ const LoginRegister: React.FC = () => {
                     </form>
                 </div>
                 <div className="form-container sign-in-container">
-                    <form action="#">
+                    <form className="signup" action="#">
                         <h1>Sign in</h1>
 
                         <input type="email" placeholder="Email" />
