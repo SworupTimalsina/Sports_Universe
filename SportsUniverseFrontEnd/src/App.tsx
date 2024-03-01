@@ -7,6 +7,8 @@ import Aboutus from "./pages/aboutus.tsx";
 import Feedback from "./pages/feedback.tsx";
 import Contactus from "./pages/contactus.tsx";
 import Product from "./pages/products.tsx";
+import AdminDashboard from "./pages/admindashboard.tsx";
+import Review from "./pages/review.tsx";
 
 
 const router = createBrowserRouter(
@@ -40,6 +42,15 @@ const router = createBrowserRouter(
             path:"/products",
             element:<Product/>
         },
+        {
+            path:"/admin",
+            element:<AdminDashboard/>
+        },
+        {
+            path:"/review/:productId",
+            element:<Review/>
+        },
+
 
 
     ]

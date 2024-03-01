@@ -1,0 +1,162 @@
+.image {
+    margin-right: 100px;
+    margin-top: 50px;
+    /*width: 300px;*/
+    /*height: 300px;*/
+}
+
+
+
+
+.reviewbody{
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    /*width: 100%;*/
+    height: 100vh;
+    /*margin: 0;*   /
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+    color: black;
+}
+
+.change-page{
+    background-color: white;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    /*width: 500px;*/
+    /*height: 800px;*/
+    /*border: 2px;*/
+}
+
+.sliding-page{
+    background-color: white;
+    width: 800px;
+    height: 550px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Adjust width to increase the size */
+    height: 40px; /* Adjust height to increase the size */
+    content: "review";
+}
+
+.switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    transition: .4s;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+
+}
+
+.slider:before {
+    position: absolute;
+    content: "Description";
+    height: calc(100% - 4px); /* Adjust height of the slider */
+    width: calc(100% - 50%); /* Adjust width of the slider */
+    left: 2px;
+    bottom: 2px;
+    background-color: red;
+    transition: .4s;
+    border-radius: 50px;
+    color: white;
+}
+
+input:checked + .slider:before {
+    content: "Review";
+    transform: translateX(calc(100% - 2px));
+}
+
+.page-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.slider:after{
+
+    content: "Description 󠀠󠀠󠀠󠀠󠀠‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  Review";
+    /*height: calc(100% - 4px); !* Adjust height of the slider /*/
+    /*width: calc(100% - 50%); / Adjust width of the slider *!*/
+    left: 2px;
+    bottom: 2px;
+    transition: .4s;
+    border-radius: 50px;
+    padding-right:10px;
+
+}
+
+.coamper{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+}
+
+.img-prod{
+    margin-top: 140px;
+    margin-right: 100px;
+}
+
+.bill-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the pop-up is on top of other elements */
+}
+
+.bill-content {
+    text-align: center;
+}
+
+.bill-content h3 {
+    margin-bottom: 10px;
+}
+
+.bill-content p {
+    margin: 5px 0;
+}
+
+.bill-content button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Optionally, add a background overlay to darken the page when the pop-up is visible */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Ensure the overlay is below the pop-up but above other elements */
+}

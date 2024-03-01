@@ -10,8 +10,8 @@ const TopBar: React.FC = () => {
                 <div className="buttons">
                     <a href='/dashboard' style={{ backgroundColor: 'black', color: 'white' }}><b>Home</b></a>
                     <a href='/products' style={{ backgroundColor: 'black', color: 'white' }}><b>Products</b></a>
-                    <a href='/order' style={{ backgroundColor: 'black', color: 'white' }}><b>History</b></a>
                     <a href='/aboutus' style={{ backgroundColor: 'black', color: 'white' }}><b>About Us</b></a>
+                    <a href='/admin' style={{ backgroundColor: 'black', color: 'white' }}><b>Admin</b></a>
                 </div>
 
                 <a href='/' style={{ backgroundColor: 'black', color: 'white' }} className="logout-button"><b>Log Out</b></a>
